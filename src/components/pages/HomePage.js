@@ -10,132 +10,45 @@ import React from 'react';
 // import bootstrap from '../../images/bootstrap4-small.png';
 // import sass from '../../images/sass-small.png';
 // import webpack from '../../images/webpack-small.png';
-
-
-// COMPONENT
+import { Articles } from './homepages/Articles.js';
+import { Portfolios } from './homepages/Portfolios.js';
 
 const HomePage = () => (
     <main>
-        <section id="about" className="section">
-            <div className="container wow softFadeInUp" data-wow-delay="0.3s">	
+        <div>
+            <section className="bg-sand hero-block home-about">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-6 ">
+                            <div className="section-title title-ex1">
+                                <h2 className="title-text">About Us</h2>
+                            </div>
+                            <p className="description">
+                                Metus! Repellat itaque atque sagittis lectus, volutpat necessitatibus praesentium vestibulum atque quidem quaerat sapien. Ex dui aliqua orci dictum integer! est elit. Ipsam numquam. Accumsan explicabo vulputate quam aspernatur platea inventore iure vel ante,
+                            </p>
+                            <p className="description">
+                                Lectus faucibus, ex eveniet! Lacus ipsum repellendus habitasse malesuada dictum dolorem purus iure congue quibusdam! Rutrum, hic itaque. Irure nihil! Ducimus? Primis rem.
+                            </p>
+                            <a href="page-aboutus.html" className="btn btn-default btn-primary">Read More</a>
+                        </div>
 
-                <div className="section-header text-center">
-                    <span className="display-5 text">Lorem Ipsum</span>
-                    <h2 className="section-title display-2">About Us</h2>
-                    <span className="line"><i className="icon-livejournal"></i></span>
+                        <div className="col-md-6 ">
+                            <div className="promo-video bg-image">
+                                <div className="video-button video-box">
+                                    <a href="javascript:void(0)">
+                                        <i className="fa fa-play play-icon" aria-hidden="true" data-video="https://www.youtube.com/embed/g3-VxLQO7do?autoplay=1"></i>
+                                        <span className="hide">Watch Video</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </section>
 
-
-                <div className="row">
-                    <div className="col-lg-6 col-md-12 col-sm-12 mb-5">
-                        <h3 className="display-3 mb-4">Boka Business Company Inc</h3>
-                        <p className="mb-4">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari. 
-                        </p>
-                        <p className="mb-4">
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore euugi at nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.
-                        </p>
-                        <a href="" className="btn btn-md btn-outline-primary">Read More</a>
-                    </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12">
-
-                        <div className="card card-style-3 mb-4 clearfix">
-                            <div className="card-icon">
-                                <i className="icon-search"></i>
-                            </div>
-                            <div className="card-block">
-                                <h4 className="card-title display-4">Creative</h4>
-                                <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit mini.</p>
-                            </div>
-                        </div>
-
-                        <div className="card card-style-3 mb-4 clearfix">
-                            <div className="card-icon">
-                                <i className="icon-thumbs-o-up"></i>
-                            </div>
-                            <div className="card-block">
-                                <h4 className="card-title display-4">Productive</h4>
-                                <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit mini.</p>
-                            </div>
-                        </div>
-
-                        <div className="card card-style-3 mb-4 clearfix">
-                            <div className="card-icon">
-                                <i className="icon-pie"></i>
-                            </div>
-                            <div className="card-block">
-                                <h4 className="card-title display-4">Flexible</h4>
-                                <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit mini.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-        <section>
-        </section>
-
-        {/* <section id="blog" class="section">
-            <div class="container">
-                <div class="section-header text-center wow softFadeInUp" data-wow-delay="0.0s">
-                    <span class="display-5 text">Cool stuffs from us</span>
-                    <h2 class="section-title display-2">Blogs</h2>
-                    <span class="line"><i class="icon-livejournal"></i></span>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-4 block blog wow softFadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-img">
-                            <img class="img-fluid lazy" data-src="images/blog/1.jpg" alt="">
-                        </div>
-                        <div class="blog-header mb-3">
-                            <div class="blog-date bg-primary">
-                                <span>13</span>
-                                <span>May</span>
-                            </div>
-                            <span class="blog-category text-muted mb-1">Jaromir Muravyov</span>
-                            <h4 class="blog-title"><a href="#">A tell of two kidneys!</a></h4>
-                        </div>
-
-                        <p class="blog-content">Curabitur mollis laoreet urna, eget viverra turpis ornare id. Curabitur nec porta erat. Donec bibendum nibh a volutpat rhoncus.</p>
-                    </div>
-
-                    <div class="col-12 col-md-4 block blog wow softFadeInUp" data-wow-delay="0.4s">
-                        <div class="blog-img">
-                            <img class="img-fluid lazy" data-src="images/blog/2.jpg" alt="">
-                        </div>
-
-                        <div class="blog-header mb-3">
-                            <div class="blog-date bg-primary">
-                                <span>26</span>
-                                <span>Mar</span>
-                            </div>
-                            <span class="blog-category text-muted mb-1">Christina Akers</span>
-                            <h4 class="blog-title"><a href="#">To operate or not is the q</a></h4>
-                        </div>
-                        <p>Praesent vestibulum at libero id congue. Sed iaculis blandit lobortis. Pellentesque quis enim quis odio vestibulum ornare sed eu ligula</p>
-                        
-                    </div>
-
-                    <div class="col-12 col-md-4 block blog wow softFadeInUp" data-wow-delay="0.6s">
-                        <div class="blog-img">
-                            <img class="img-fluid lazy" data-src="images/blog/3.jpg" alt="">
-                        </div>
-
-                        <div class="blog-header mb-3">
-                            <div class="blog-date bg-primary">
-                                <span>11</span>
-                                <span>Mar</span>
-                            </div>
-                            <span class="blog-category text-muted mb-1">Peter Grant Jr</span>
-                            <h4 class="blog-title"><a href="#">10 tips to avoid heart risk</a></h4>
-                        </div>
-                        <p>Praesent vestibulum at libero id congue. Sed iaculis blandit lobortis. Pellentesque quis enim quis odio vestibulum ornare sed eu ligula</p>
-                    </div>
-
-                </div>
-            </div>
-        </section> */}
+            <Portfolios />
+            <Articles />
+        </div>
     </main>
 );
 

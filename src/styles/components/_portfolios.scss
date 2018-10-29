@@ -1,0 +1,50 @@
+.portfolio_grid {
+    display: flex;
+    .card {
+        align-items: center;
+        border: 0;
+        justify-content: center;
+        .hover-overlay {
+            align-items: center;
+            display: flex;
+            height: 90%;
+            justify-content: center;
+            position: absolute;
+            width: 90%;
+            &.effect-scale {
+                z-index: 5;
+                transition: all .4s ease;
+                transform: scale(0);
+                opacity: 1;
+                background-color: rgba(12,198,82,.7);
+            }
+            .overlay-content {
+                text-align: center;
+                color: #fff;
+                font-weight: 300;
+            }
+            .icon-circle {
+                width: 50px;
+                height: 50px;
+                border: 1px solid rgba(255,255,255,.7);
+                border-radius: 100%;
+                line-height: 48px;
+                color: #fff;
+                display: inline-block;
+                margin: 15px 5px;
+                &:hover {
+                    background:#fff;
+                    color:#0cc652
+                }
+            }
+        }
+        &:hover {
+            .hover-overlay {
+                &.effect-scale {
+                    transition: all .4s ease;
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}
