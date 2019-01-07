@@ -10,7 +10,7 @@ import React from 'react';
 // import bootstrap from '../../images/bootstrap4-small.png';
 // import sass from '../../images/sass-small.png';
 // import webpack from '../../images/webpack-small.png';
-import { Articles } from './homepages/Articles.js';
+import { Articles } from '../Blogs/Articles.js';
 import { Portfolios } from './homepages/Portfolios.js';
 
 const HomePage = () => (

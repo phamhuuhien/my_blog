@@ -18,22 +18,22 @@ export const Header = () => (
             <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
                     <div className="nav-link">
-                        <NavLink to='/' activeClassName='menu selected' exact={true}>TRANG CHỦ</NavLink>
+                        <NavLink to='/' activeClassName='menu selected' exact={true}>HOME</NavLink>
                     </div>
                 </li>
                 <li className="nav-item">
                     <div className="nav-link">
-                        <NavLink to='/zipcodes' activeClassName='menu selected'>TIN CÔNG NGHỆ</NavLink>
+                        <NavLink to='/zipcodes' activeClassName='menu selected'>NEWS</NavLink>
                     </div>
                 </li>
                 <li className="nav-item">
                     <div className="nav-link">
-                        <NavLink to='/zipcodes' activeClassName='menu selected'>GÓC LẬP TRÌNH</NavLink>
+                        <NavLink to='/blogs' activeClassName='menu selected'>BLOGS</NavLink>
                     </div>
                 </li>
                 <li className="nav-item">
                     <div className="nav-link">
-                        <NavLink to='/about' activeClassName='menu selected'>GIỚI THIỆU</NavLink>
+                        <NavLink to='/about' activeClassName='menu selected'>ABOUT</NavLink>
                     </div>
                 </li>
             </ul>
