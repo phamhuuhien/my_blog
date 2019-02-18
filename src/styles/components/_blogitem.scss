@@ -1,0 +1,11 @@
+.blogitem {
+    .img-full {
+        width: 100%;
+    }
+    .media-body {
+        .blog-infor {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
