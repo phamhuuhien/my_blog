@@ -32,7 +32,7 @@ class Articles extends Component {
                     </div>
 
                     <div className="row">
-                        {this.props.blogs.map(article => <Article key={article.name} article={article}/>)}
+                        {this.props.blogs.map(article => <Article key={article.id} article={article}/>)}
                     </div>
                 </div>
             </section>

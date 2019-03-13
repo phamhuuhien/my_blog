@@ -39,8 +39,12 @@ BlogItemPage.propTypes = {
 
 // CONFIGURE REACT REDUX
 
-const mapStateToProps = state => {
-    const { blogitem, sidebar } = state.blogItem;
+const mapStateToProps = (state, ownProps) => {
+    const { blogs } = state.blogs;
+    let id = ownProps.match.params.id;
+    let blogitem = blogs.find(blog => blog.id == id);
+    console.log('blogitem', blogitem);
+    let sidebar = {};
     return { blogitem, sidebar };
 };
 

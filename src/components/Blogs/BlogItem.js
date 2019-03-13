@@ -2,6 +2,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import renderHTML from 'react-render-html';
 
 const BlogItem = ({ blogitem }) => (
     <div className="col-lg-8 order-lg-12">
@@ -13,7 +14,7 @@ const BlogItem = ({ blogitem }) => (
             </div>
             <div className="media-body">
                 <h2 className="">{blogitem.title}</h2>
-                <p>{blogitem.content}</p>
+                <p>{renderHTML(blogitem.description)}</p>
                 <div className="blog-infor">
                     <div>by: Admin</div>
                     <div><i className="fa fa-calendar" aria-hidden="true"></i> 20 Sep, 2017</div>

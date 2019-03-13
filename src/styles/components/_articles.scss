@@ -68,7 +68,8 @@
         background: #fff;
         border: 1px solid #efeff3;
         font-size: 14px;
-        padding: 30px 20px 10px;
+        padding: 20px 20px 10px;
+        min-width: 0;
         h5 {
             transition: color .3s ease;
             margin-bottom: 15px;
@@ -77,7 +78,7 @@
             display: block;
             color: #222;
             font-size: 11px;
-            padding: 23px 0;
+            padding: 6px 0;
             text-transform: uppercase;
             font-weight: 400;
         }
@@ -95,6 +96,9 @@
                 height: 1px;
                 background: #eeeef2;
             }
+        }
+        .description {
+            min-height: 106px;
         }
     }
 }
@@ -114,7 +118,7 @@
 @media (min-width: 1200px) {
     .media.blog-media {
         .media-body {
-            padding: 30px 20px 10px;
+            padding: 20px 20px 10px;
             h5 {
                 margin-bottom: 15px;
                 font-size: 18px;

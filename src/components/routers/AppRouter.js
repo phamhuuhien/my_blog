@@ -23,7 +23,7 @@ export const AppRouter = () => (
                 <Route path='/' component={HomePage} exact={true} />
                 <Route path='/zipcodes' component={ZipCodesPage} />
                 <Route path='/blogs' component={BlogsPage} />
-                <Route path='/blogitem' component={BlogItemPage} />
+                <Route path='/blogitem/:id' component={BlogItemPage} />
                 <Route path='/about' component={AboutPage} />
                 <Redirect to="/" />
             </Switch>
